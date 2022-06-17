@@ -1,0 +1,27 @@
+.btn {
+    margin-left: 5px;
+}
+
+#detail {
+    text-align: right;
+}
+
+#detail img {
+    width: 300px;
+}
+
+#detail ul {
+    list-style-type: none;
+    font-size: larger;
+}
+
+#list ul {
+    list-style-type: auto;
+    font-size: larger;
+    text-decoration: underline;
+}
+
+#list li:hover {
+    cursor: pointer;
+    color: crimson;
+}
