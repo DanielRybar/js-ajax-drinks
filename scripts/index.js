@@ -58,7 +58,7 @@ const viewList = (url) => {
     downloadJSON(url, (data) => {
         if(Array.isArray(data.drinks)) {
             cleanElement(errMess);
-            listElement.innerHTML = "<ul id='ulList' class='col-md'></ul>"; 
+            listElement.innerHTML = "<ul id='ulList'></ul>"; 
             ulList = document.getElementById("ulList");
             for(let drink of data.drinks) {
                 let newItem = document.createElement("li");
@@ -96,7 +96,6 @@ const loadDrink = (url) => {
         }
         let html = `
             <img src="${data.strDrinkThumb}" alt=${data.strDrink} />
-            <table>
             <ul>
                 <li><b>Název:</b> ${data.strDrink}</li>
                 <li><b>Kategorie:</b> ${data.strCategory}</li>
